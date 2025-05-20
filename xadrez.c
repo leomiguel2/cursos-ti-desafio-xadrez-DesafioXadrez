@@ -4,8 +4,20 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
+ void  moverbispo (int casas){
+    if(casas > 0) {
+        printf("cima diagonal a direita/n");
+        moverbispo (casas -1);
+
+
+    }
+ }
 int main() {
-    // Nível Novato - Movimentação das Peças
+    moverbispo (5);
+
+    return 0;
+}
+
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
     // Implementação de Movimentação do Bispo
@@ -28,5 +40,4 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    return 0;
-}
+
