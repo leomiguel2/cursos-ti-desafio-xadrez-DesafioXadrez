@@ -4,7 +4,7 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
- void  moverbispo (int casas){
+ void  moverbispo (int casas) {
     if(casas > 0) {
         printf("cima diagonal a direita/n");
         moverbispo (casas -1);
@@ -15,6 +15,29 @@
 int main() {
     moverbispo (5);
 
+ void moverrainha (int casas) {
+
+  if (casas > 0 ) {
+   printf(" cima/n");
+
+   moverrainha (casas -1);
+  }
+ }
+ int main () {
+   moverrainha (8);
+
+  void movertorre (int casas) {
+
+   if (casas > 0) {
+    printf ("direita/n");
+    movertorre (casas -1);
+
+   }
+  }
+  int main() {
+   movertorre (6);
+   
+
     return 0;
 }
 
@@ -22,7 +45,6 @@ int main() {
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
